@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<title>ورود</title>
+<!-- Stylesheets -->
+{% load static %}
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/main.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'images/favicon-11.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'images/favicon-11.png' %}" type="image/x-icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+{#<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->#}
+{#<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->#}
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Style Three -->
+    <header class="main-header header-style-three">
+    	
+		<!-- Header Top -->
+        <div class="header-top">
+            <div class="auto-container">
+                <div class="clearfix">
+				
+					<!-- Top Left -->
+                    <div class="top-left clearfix">
+					
+						<!-- Info List -->
+                        <ul class="info-list clearfix">
+							<li><span>تلفن تماس: </span><a href="tel:09107448401"> 09107448401</a></li>
+							<li><span>پشتیبانی:</span><a href="mailto:aliashtab77@gmail.com"> aliashtab77@gmail.com</a></li>
+						</ul>
+						
+                    </div>
+					
+                </div>
+            </div>
+        </div>
+		
+    	<!-- Header Upper -->
+        <div class="header-upper">
+        	<div class="outer-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="../../yami/templates/index.html"><img src="{% static 'images/logo-12.png' %}" alt="" title=""></a></div>
+                    </div>
+					
+                   	<div class="nav-outer clearfix">
+						<!-- Mobile Navigation Toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="dropdown"><a href="/static">خانه</a>
+                                        <ul>
+                                            <li><a href="/static">خانه</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="../../yami/templates/about.html">درباره ما</a>
+                                        <ul>
+                                            <li><a href="../../yami/templates/about.html">درباره ما</a></li>
+											<li><a href="../../yami/templates/team.html">تیم</a></li>
+											<li><a href="../../yami/templates/faq.html">سؤالات متداول</a></li>
+											<li><a href="../../yami/templates/privacy.html">حریم خصوصی</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="#">صفحات</a>
+										<ul>
+											<li><a href="../../yami/templates/price.html">لیست قیمت</a></li>
+											<li><a href="../../yami/templates/testimonials.html">نظر کاربران</a></li>
+											<li><a href="../../yami/templates/coming-soon.html">به زودی</a></li>
+										</ul>
+									</li>
+									<li class="dropdown"><a href="#">خدمات</a>
+                                        <ul>
+                                            <li><a href="../../yami/templates/service.html">خدمات</a></li>
+                                            <li><a href="../../yami/templates/service-detail.html">خدمات جزئیات</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="#">وبلاگ</a>
+                                        <ul>
+                                            <li><a href="../../yami/templates/blog.html">وبلاگ</a></li>
+                                            <li><a href="../../yami/templates/blog-detail.html">جزئیات وبلاگ</a></li>
+                                            <li><a href="../../yami/templates/not-found.html">خطای 404</a></li>
+                                        </ul>
+                                    </li>
+									<li class="current dropdown"><a href="#">فروشگاه ما</a>
+										<ul>
+											<li><a href="../../yami/templates/shops.html">محصولات ما</a></li>
+											<li><a href="../../yami/templates/shop-single.html">محصولات تکی</a></li>
+											<li><a href="shoping-cart.html">سبد خرید</a></li>
+											<li><a href="../../yami/templates/checkout.html">بررسی</a></li>
+											<li><a href="../../yami/templates/login.html">ورود</a></li>
+											<li><a href="../../yami/templates/register.html">ثبت نام</a></li>
+										</ul>
+									</li>
+                                    <li><a href="../../yami/templates/contact.html">تماس با ما</a></li>
+								</ul>
+							</div>
+							
+						</nav>
+						
+					</div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+		<!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon lnr lnr-cross"></span></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="/index/"><img src="{% static 'images/logo-12.png' %}" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+		
+    </header>
+    <!--End Main Header -->
+	
+	<!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/17.jpg' %})">
+		<div class="pattern-layer" style="background-image: url({% static 'images/background/pattern-5.png' %})"></div>
+    	<div class="auto-container">
+			<h2>ورود</h2>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Contact Page Section -->
+	<section class="contact-page-section">
+		<div class="pattern-layer" style="background-image: url({% static 'images/background/pattern-7.png' %})"></div>
+		<div class="auto-container">
+			<div class="inner-container">
+				<!-- Sec Title Two -->
+				<div class="sec-title-two centered">
+					<h2>اکنون وارد شوید</h2>
+				</div>
+				
+				<!-- Login Form -->
+				<div class="styled-form">
+					<form method="post" action="/login/">
+                        {% csrf_token %}
+                        <p style="color: red">{{ username }} : {{ erorremas }}</p>
+						<div class="form-group">
+							<label>نام کاربر / آدرس ایمیل</label>
+							<input type="text" name="username" value="{% if username %}{{ username }}{% endif %}" placeholder="" required>
+						</div>
+						<div class="form-group">
+							<label>کلمه عبور</label>
+							<input type="password" name="password" value="" placeholder="" required>
+						</div>
+						<div class="form-group">
+							<div class="clearfix">
+								<div class="pull-right">
+									<div class="check-box">
+										<input type="checkbox" name="remember-password" id="type-1"> 
+										<label for="type-1">مرا به خاطر بسپار</label>
+									</div>
+								</div>
+								<div class="pull-left">
+									<div class="check-box">
+										<input type="checkbox" name="remember-password" id="type-2">
+										<label for="type-2">رمز عبور خود را فراموش کرده اید</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="theme-btn btn-style-three"><span class="txt">ورود</span></button>
+						</div>
+						
+						<div class="form-group">
+							<div class="social-box">
+								<span>یا ورود با</span>
+								<a href="#" class="fab fa-facebook-f"></a>
+								<a href="#" class="fab fa-twitter"></a>
+								<a href="#" class="fab fa-google"></a>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="users">حساب کاربری ندارید <a href="../../yami/templates/register.html">اکنون ثبت نام کنید</a></div>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Contact Page Section -->
+	
+	<!-- Call To Action Section Four -->
+    <section class="call-to-action-four">
+        <div class="auto-container">
+           <h2>آماده ای؟  <br> بیایید کار کنیم!</h2>
+		   <a href="../../yami/templates/contact.html" class="theme-btn btn-style-three"><span class="txt">شروع کنید</span></a>
+        </div>
+    </section>
+    <!-- End Call To Action Section Four -->
+	
+	<!-- Main Footer / Style Three -->
+    <footer class="main-footer style-three">
+		<div class="pattern-layer-four" style="background-image: url({% static 'images/icons/dotted-pattern-7.png' %})"></div>
+		<div class="pattern-layer-five" style="background-image: url({% static 'images/background/leaf-layer.png' %})"></div>
+		<div class="auto-container">
+			
+        	<!-- Widgets Section -->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget info-widget">
+									<h6>تماس با ما</h6>
+									<ul class="contact-list">
+										<li>پشتیبانی 24/7</li>
+										<li><span>تلفن: </span><a href="tel:09107448401">09107448401</a></li>
+										<li><span>ایمیل: </span><a href="mailto:aliashtab77@gmail.com">aliashtab77@gmail.com</a></li>
+										<li><a href="mailto:aliashtab77@gmail.com">aliashtab77@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget links-widget">
+									<h6>لینک های سریع</h6>
+									<ul class="page-links">
+										<li><a href="#">خانه</a></li>
+										<li><a href="#">درباره ما</a></li>
+										<li><a href="#">دوره های آموزشی</a></li>
+										<li><a href="#">گالری</a></li>
+										<li><a href="#">تماس</a></li>
+										<li><a href="#">فیدبک</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget links-widget">
+									<h6>خدمات</h6>
+									<ul class="page-links">
+										<li><a href="#">طراحی تعاملی</a></li>
+										<li><a href="#">طراحی بصری</a></li>
+										<li><a href="#">تایپوگرافی</a></li>
+										<li><a href="#">بازار یابی</a></li>
+										<li><a href="#">تجارت الکترونیک</a></li>
+										<li><a href="#">کسب و کار</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+                                    	<a href="../../yami/templates/index.html"><img src="{% static 'images/logo-12.png' %}" alt="" /></a>
+                                    </div>
+									<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است. </div>
+									<div class="social-box">
+										<span>ما را دنبال کنید</span>
+										<a href="#" class="fab fa-facebook-f"></a>
+										<a href="#" class="fab fa-twitter"></a>
+										<a href="#" class="fab fa-linkedin"></a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<!-- Copy Right -->
+		<div class="footer-bottom">
+			<div class="auto-container">
+				<div class="copyright">&copy; 1399 کلیه حقوق محفوظ است</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Main Footer -->
+	
+</div>
+<!--End pagewrapper-->
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %} "></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/parallax.min.js' %}"></script>
+<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/validate.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

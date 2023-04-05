@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ایران یامی</title>
+<!-- Stylesheets -->
+{% load static %}
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/main.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'images/favicon-7.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'images/favicon-7.png' %}" type="image/x-icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Style Eight -->
+    <header class="main-header header-style-eight">
+    	
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="outer-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="index.html"><img src="{% static 'images/logo-8.png' %}" alt="" title=""></a></div>
+                    </div>
+					
+                   	<div class="nav-outer clearfix">
+						<!-- Mobile Navigation Toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="current dropdown"><a href="index.html">خانه</a>
+                                        <ul>
+                                            <li><a href="/">خانه</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="#">درباره ما</a>
+                                        <ul>
+                                            <li><a href="about.html">درباره ما</a></li>
+											<li><a href="team.html">تیم</a></li>
+											<li><a href="faq.html">سؤالات متداول</a></li>
+											<li><a href="privacy.html">حریم خصوصی</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="#">صفحات</a>
+										<ul>
+											<li><a href="price.html">لیست قیمت</a></li>
+											<li><a href="testimonials.html">نظر کاربران</a></li>
+											<li><a href="coming-soon.html">به زودی</a></li>
+										</ul>
+									</li>
+									<li class="dropdown"><a href="#">خدمات</a>
+                                        <ul>
+                                            <li><a href="service.html">خدمات</a></li>
+                                            <li><a href="service-detail.html">خدمات جزئیات</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="#">وبلاگ</a>
+                                        <ul>
+                                            <li><a href="blog.html">وبلاگ</a></li>
+                                            <li><a href="blog-detail.html">جزئیات وبلاگ</a></li>
+                                            <li><a href="not-found.html">خطای 404</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="#">فروشگاه</a>
+										<ul>
+											<li><a href="shops/">محصولات ما</a></li>
+											<li><a href="/shopingcart/">سبد خرید</a></li>
+											<li><a href="/login/">ورود</a></li>
+											<li><a href="/register/">ثبت نام</a></li>
+										</ul>
+									</li>
+                                    <li><a href="contact.html">تماس با ما</a></li>
+								</ul>
+							</div>
+							
+						</nav>
+						
+						<!-- Outer Box -->
+						<div class="outer-box clearfix">
+							<div class="account">
+								<a href="/login/"><span class="icon far fa-user"></span> ورود</a>
+							</div>
+							<!-- Search Btn -->
+							<div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>
+						</div>
+						
+					</div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+		<!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon lnr lnr-cross"></span></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="/index/"><img src="{% static 'images/logo-8.png' %}" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+		
+    </header>
+    <!--End Main Header -->
+	
+	<!-- Main Slider Seven -->
+    <section class="main-slider-seven">
+		<div class="icon-one"></div>
+		<div class="icon-two"></div>
+		<div class="pattern-layer-one" style="background-image: url({% static 'images/icons/dotted-pattern-1.png' %})"></div>
+		<div class="pattern-layer-two" style="background-image: url({% static 'images/icons/dotted-pattern-1.png' %})"></div>
+		<div class="pattern-layer-three" style="background-image: url({% static 'images/icons/dotted-pattern-1.png' %})"></div>
+		<div class="main-slider-carousel owl-carousel owl-theme">
+            
+            <div class="slide">
+				<div class="auto-container">
+					<div class="row clearfix">
+								
+						<!-- Content Column -->
+						<div class="content-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<h1>لورم ایپسوم متن </br>ساختگی با تولید</h1>
+								<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+								<div class="btns-box clearfix">
+									<a href="about.html" class="theme-btn btn-style-fourteen"><span class="txt">خرید</span></a>
+									<div class="cart"><a href="shop-single.html">افزودن به سبد خرید</a></div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Image Column -->
+						<div class="image-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="image">
+									<img src="{% static 'images/main-slider/content-image-2.jpg' %}" alt="" />
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide">
+				<div class="auto-container">
+					<div class="row clearfix">
+								
+						<!-- Content Column -->
+						<div class="content-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<h1>لورم ایپسوم متن </br>ساختگی با تولید</h1>
+								<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+								<div class="btns-box clearfix">
+									<a href="about.html" class="theme-btn btn-style-fourteen"><span class="txt">خرید</span></a>
+									<div class="cart"><a href="shop-single.html">افزودن به سبد خرید</a></div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Image Column -->
+						<div class="image-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="image">
+									<img src="{% static 'images/main-slider/content-image-2.jpg' %}" alt="" />
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide">
+				<div class="auto-container">
+					<div class="row clearfix">
+								
+						<!-- Content Column -->
+						<div class="content-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<h1>لورم ایپسوم متن </br>ساختگی با تولید</h1>
+								<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+								<div class="btns-box clearfix">
+									<a href="about.html" class="theme-btn btn-style-fourteen"><span class="txt">خرید</span></a>
+									<div class="cart"><a href="shop-single.html">افزودن به سبد خرید</a></div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Image Column -->
+						<div class="image-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="image">
+									<img src="{% static 'images/main-slider/content-image-2.jpg' %}" alt="" />
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+	<!-- End Main Slider Seven -->
+	
+	<!-- Featured Section Two -->
+	<section class="featured-section-two">
+		<div class="pattern-layer-one" style="background-image: url({% static 'images/icons/pattern-1.png' %})"></div>
+		<div class="pattern-layer-two" style="background-image: url({% static 'images/icons/dotted-pattern-1.png' %})"></div>
+		<div class="section-text">ساعت</div>
+		<div class="auto-container">
+			<!-- Sec Title Seven -->
+			<div class="sec-title-seven centered">
+				<h2>ویژگی های اصلی</h2>
+				<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</div>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Blocks Column -->
+				<div class="blocks-column left-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-column">
+						
+						<!-- Feature Block Two -->
+						<div class="feature-block-two">
+							<div class="inner-box">
+								<div class="icon-box">
+									<span class="icon"></span>
+								</div>
+								<h3><a href="service-detail.html">رتباط با گوشی های هوشمند</a></h3>
+								<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</div>
+							</div>
+						</div>
+						
+						<!-- Feature Block Two -->
+						<div class="feature-block-two">
+							<div class="inner-box">
+								<div class="icon-box">
+									<span class="icon"></span>
+								</div>
+								<h3><a href="service-detail.html">کیفیت عالی</a></h3>
+								<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- Image Column -->
+				<div class="image-column col-lg-4 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<div class="image">
+							<img src="{% static 'images/resource/feature-1.jpg' %}" alt="" />
+						</div>
+					</div>
+				</div>
+				
+				<!-- Blocks Column -->
+				<div class="blocks-column right-column col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-column">
+						
+						<!-- Feature Block Two -->
+						<div class="feature-block-two">
+							<div class="inner-box">
+								<div class="icon-box">
+									<span class="icon"></span>
+								</div>
+								<h3><a href="service-detail.html">پشتیبانی</a></h3>
+								<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</div>
+							</div>
+						</div>
+						
+						<!-- Feature Block Two -->
+						<div class="feature-block-two">
+							<div class="inner-box">
+								<div class="icon-box">
+									<span class="icon"></span>
+								</div>
+								<h3><a href="service-detail.html">داده ایمن</a></h3>
+								<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Featured Section Two -->
+	
+	<!-- Products Section Two -->
+	<section class="products-section-two">
+		<div class="pattern-layer-one" style="background-image: url({% static 'images/icons/pattern-1.png' %})"></div>
+		<div class="auto-container">
+			<!-- Sec Title Seven -->
+			<div class="sec-title-seven centered">
+				<h2>محصولات ما</h2>
+				<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</div>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Product Block -->
+				<div class="product-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="shop-single.html"><img src="{% static 'images/resource/products/4.jpg' %}" alt="" /></a>
+							<div class="price">25000 تومان</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="shop-single.html">نام محصول</a></h3>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</div>
+							<a href="shop-single.html" class="cart">افزودن به سبد خرید</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Product Block -->
+				<div class="product-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="shop-single.html"><img src="{% static 'images/resource/products/5.jpg' %}" alt="" /></a>
+							<div class="price">25000 تومان</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="shop-single.html">نام محصول</a></h3>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</div>
+							<a href="shop-single.html" class="cart">افزودن به سبد خرید</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Product Block -->
+				<div class="product-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="150ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="shop-single.html"><img src="{% static 'images/resource/products/6.jpg' %}" alt="" /></a>
+							<div class="price">25000 تومان</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="shop-single.html">نام محصول</a></h3>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</div>
+							<a href="shop-single.html" class="cart">افزودن به سبد خرید</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Product Block -->
+				<div class="product-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="shop-single.html"><img src="{% static 'images/resource/products/7.jpg' %}" alt="" /></a>
+							<div class="price">25000 تومان</div>
+						</div>
+						<div class="lower-content">
+							<h3><a href="shop-single.html">نام محصول</a></h3>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</div>
+							<a href="shop-single.html" class="cart">افزودن به سبد خرید</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="all-products text-center">
+				<a href="shops.html" class="view-all">مشاهده تمام محصولات</a>
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Products Section Two -->
+	
+	<!-- Design Section -->
+	<section class="design-section">
+		<div class="auto-container">
+			
+			<div class="row clearfix">
+				
+				<!-- Image Column -->
+				<div class="image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<div class="image">
+							<img src="{% static 'images/resource/design.jpg' %}" alt="" />
+						</div>
+					</div>
+				</div>
+				
+				<!-- Content Column -->
+				<div class="content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="section-text">ساعت</div>
+					<div class="inner-column">
+						<!-- Sec Title Seven -->
+						<div class="sec-title-seven">
+							<h2>طراحی منحصر <br> به فرد و راحت</h2>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+						</div>
+						<div class="btns-box clearfix">
+							<a href="about.html" class="theme-btn btn-style-fourteen"><span class="txt">بیشتر</span></a>
+							<div class="buy"><a href="shop-single.html">خرید</a></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Design Section -->
+	
+	<!-- Call To Action Section -->
+	<section class="call-to-action-section" style="background-image: url({% static 'images/background/4.jpg' %})">
+		<div class="auto-container">
+			<div class="content">
+				<h2>نسخه محدود ساعت هوشمند</h2>
+				<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده <br> از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون</div>
+				<a href="shop-single.html" class="buy">خرید</a>
+			</div>
+		</div>
+	</section>
+	<!-- End Call To Action Section -->
+	
+	<!-- Design Section Two -->
+	<section class="design-section-two">
+		<div class="auto-container">
+			
+			<div class="row clearfix">
+				
+				<!-- Content Column -->
+				<div class="content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="section-text">ساعت</div>
+					<div class="inner-column">
+						<!-- Sec Title Seven -->
+						<div class="sec-title-seven">
+							<h2>این محبوب ترین محصول <br> ما است</h2>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+						</div>
+						<div class="btns-box clearfix">
+							<a href="about.html" class="theme-btn btn-style-fourteen"><span class="txt">خرید</span></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Image Column -->
+				<div class="image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<div class="image">
+							<img src="{% static 'images/resource/design-1.jpg' %}" alt="" />
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Design Section Two -->
+	
+	<!-- Testimonial Section Eight -->
+	<section class="testimonial-section-eight">
+		<div class="section-text">ساعت</div>
+		<div class="pattern-layer-one" style="background-image: url({% static 'images/icons/pattern-1.png' %})"></div>
+		<div class="auto-container">
+			<!-- Sec Title Seven -->
+			<div class="sec-title-seven centered">
+				<h2>آنچه مشتری ما می گوید</h2>
+				<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</div>
+			</div>
+			<div class="inner-container">
+				<div class="single-item-carousel owl-carousel owl-theme">
+					
+					<!-- Testimonial Block Six -->
+					<div class="testimonial-block-six">
+						<div class="inner-box">
+							<div class="author-image">
+								<img src="{% static 'images/resource/author-6.jpg' %}" alt="" />
+							</div>
+							<div class="author-name">جان اسمیت</div>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+						</div>
+					</div>
+					
+					<!-- Testimonial Block Six -->
+					<div class="testimonial-block-six">
+						<div class="inner-box">
+							<div class="author-image">
+								<img src="{% static 'images/resource/author-6.jpg' %}" alt="" />
+							</div>
+							<div class="author-name">جان اسمیت</div>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+						</div>
+					</div>
+					
+					<!-- Testimonial Block Six -->
+					<div class="testimonial-block-six">
+						<div class="inner-box">
+							<div class="author-image">
+								<img src="{% static 'images/resource/author-6.jpg' %}" alt="" />
+							</div>
+							<div class="author-name">جان اسمیت</div>
+							<div class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Testimonial Section Eight -->
+	
+	<!-- Footer Style Four -->
+    <footer class="footer-style-four style-three">
+		<div class="section-text">ساعت</div>
+		<div class="bg-layer" style="background-image: url({% static 'images/background/5.jpg' %})"></div>
+		<div class="auto-container">
+			
+			<!-- Widgets Section -->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!-- Big Column -->
+                    <div class="big-column col-lg-7 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+								<div class="footer-widget info-widget">
+									<h6>خبرنامه</h6>
+									<!-- Subscribe Form -->
+									<div class="subscribe-form">
+										<form method="post" action="contact.html">
+											<div class="form-group">
+												<input type="email" name="email" value="" placeholder="ایمیل" required>
+												<button type="submit" class="theme-btn btn-style-fourteen"><span class="txt">ارسال</span></button>
+											</div>
+										</form>
+									</div>
+									
+									<div class="social-box">
+										<span>ما را دنبال کنید</span>
+										<a href="#" class="fab fa-facebook-f"></a>
+										<a href="#" class="fab fa-twitter"></a>
+										<a href="#" class="fab fa-linkedin"></a>
+									</div>
+									
+								</div>
+							</div>
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+								<div class="footer-widget links-widget">
+									<h6>لینک های سریع</h6>
+									<ul class="page-links">
+										<li><a href="#">خانه</a></li>
+										<li><a href="#">درباره ما</a></li>
+										<li><a href="#">دوره های آموزشی</a></li>
+										<li><a href="#">گالری</a></li>
+										<li><a href="#">تماس</a></li>
+										<li><a href="#">فیدبک</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+								<div class="footer-widget links-widget">
+									<h6>محصولات</h6>
+									<ul class="page-links">
+										<li><a href="#">تابستانی</a></li>
+										<li><a href="#">فروشگاه</a></li>
+										<li><a href="#">ساعت هوشمند</a></li>
+										<li><a href="#">کاسیو</a></li>
+										<li><a href="#">ورود جدید</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- Big Column -->
+                    <div class="big-column col-lg-5 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget links-widget">
+									<h6>اطلاعات</h6>
+									<ul class="page-links">
+										<li><a href="#">مجوز</a></li>
+										<li><a href="#">سیاست حفظ حریم خصوصی</a></li>
+										<li><a href="#">شرایط</a></li>
+										<li><a href="#">راهنمایی</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget logo-widget">
+									<div class="logo">
+                                    	<a href="/"><img src="{% static 'images/logo-8.png' %}" alt="" /></a>
+                                    </div>
+									<div class="text">گالری ساعت هوشمند RBS در هر دوره از نظر ظاهری متفاوت است و تعداد زیادی از شما ارائه می دهند ، از جمله طیف گسترده ای. </div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<!-- Copy Right -->
+		<div class="footer-bottom">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="row clearfix">
+						<!-- Column -->
+						<div class="column col-lg-6 col-md-12 col-sm-12">
+							<div class="copyright">&copy; 1399 کلیه حقوق محفوظ است</div>
+						</div>
+						<!-- Column -->
+						<div class="nav-column col-lg-6 col-md-12 col-sm-12">
+							<ul>
+								<li><a href="#">خانه</a></li>
+								<li><a href="#">درباره ما</a></li>
+								<li><a href="#">مسافرت</a></li>
+								<li><a href="#">هتل ها</a></li>
+								<li><a href="#">وبلاگ ها</a></li>
+								<li><a href="#">تماس</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Main Footer -->
+	
+</div>
+<!--End pagewrapper-->
+
+
+<!-- Search Popup -->
+<div class="search-popup">
+	<button class="close-search style-two"><span class="flaticon-multiply"></span></button>
+	<button class="close-search"><span class="fa fa-arrow-up"></span></button>
+	<form method="post" action="blog.html">
+		<div class="form-group">
+			<input type="search" name="search-field" value="" placeholder="جستجو" required="">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</form>
+</div>
+<!-- End Header Search -->
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/parallax.min.js' %}"></script>
+<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/validate.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
